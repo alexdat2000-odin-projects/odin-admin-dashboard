@@ -99,8 +99,6 @@ body {
   padding: 10px 50px 10px 50px;
 
   font-weight: 500;
-
-  box-shadow: 0 10px 11px 0 rgba(134, 134, 134, 0.2);;
 }
 
 #greeting #full-name {
@@ -271,4 +269,9 @@ body {
 #trending-list img {
   height: 40px;
   border-radius: 50%;
+}
+
+#greeting, .project-card, #announcements-list, #trending-list {
+  box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+  z-index: 2;
 }
