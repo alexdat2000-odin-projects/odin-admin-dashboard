@@ -55,10 +55,12 @@ body {
 
 #search-icon, #notification-icon {
   height: 25px;
+  border-radius: 50%;
 }
 
 #user-avatar {
   height: 50px;
+  border-radius: 50%;
 }
 
 #search-icon {
@@ -107,6 +109,7 @@ body {
 
 #greeting img {
   height: 100px;
+  border-radius: 50%;
 }
 
 #greeting button {
