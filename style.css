@@ -8,7 +8,7 @@
 body {
   display: grid;
   grid-template-columns: 320px 1fr;
-  grid-template-rows: 100px 200px 1fr;
+  grid-template-rows: 100px 150px 1fr;
   width: 100vw;
   height: 100vh;
 
@@ -85,4 +85,37 @@ body {
 
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+
+#greeting {
+  display: grid;
+  grid-template-columns: 120px 400px 1fr 100px 100px 100px;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding: 15px 50px 0 50px;
+
+  font-weight: 500;
+
+  box-shadow: 0 10px 11px 0 rgba(134, 134, 134, 0.2);;
+}
+
+#greeting #full-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+#greeting img {
+  height: 100px;
+}
+
+#greeting button {
+  height: 40px;
+  width: 100px;
+  background: #1992D4;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
