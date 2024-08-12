@@ -8,7 +8,7 @@
 body {
   display: grid;
   grid-template-columns: 320px 1fr;
-  grid-template-rows: 100px 150px 1fr;
+  grid-template-rows: max-content max-content 1fr;
   width: 100vw;
   height: 100vh;
 
@@ -60,6 +60,7 @@ body {
 #user-avatar {
   height: 50px;
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 #search-icon {
@@ -79,10 +80,11 @@ body {
 
 #top-bar {
   display: grid;
-  grid-template-columns: 35vw 1fr 40px 60px 200px;
-  margin: 15px 50px 0 50px;
+  grid-template-columns: max-content 1fr max-content max-content max-content;
+  margin: 15px 50px 30px 50px;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 
   font-size: 1.5rem;
   font-weight: bold;
@@ -94,7 +96,7 @@ body {
   grid-template-columns: 120px 400px 1fr 100px 100px 100px;
   grid-column-gap: 20px;
   align-items: center;
-  padding: 15px 50px 0 50px;
+  padding: 0 50px 30px 50px;
 
   font-weight: 500;
 
@@ -131,9 +133,9 @@ body {
                        "projects-cards trending-list";
 
   grid-template-columns: 3fr 1fr;
-  grid-column-gap: 10px;
-  grid-template-rows: 20px 1fr 20px 1fr;
-  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  grid-template-rows: max-content 1fr max-content 1fr;
+  grid-row-gap: 10px;
 
   background: #E2E8F0;
   padding: 30px 20px 20px 20px;
@@ -145,6 +147,12 @@ body {
 
 #project-cards {
   grid-area: projects-cards;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
 }
 
 #announcements-title {
@@ -161,4 +169,36 @@ body {
 
 #trending-list {
   grid-area: trending-list;
+}
+
+#projects-title, #announcements-title, #trending-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  border-left: #F0B429 10px solid;
+
+  color: #636363;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.project-card h3 {
+  color: black;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.project-buttons img {
+  height: 25px;
 }
