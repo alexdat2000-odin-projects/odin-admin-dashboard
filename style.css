@@ -52,7 +52,6 @@ body {
 }
 
 
-
 #search-icon, #notification-icon {
   height: 25px;
   border-radius: 50%;
@@ -121,4 +120,27 @@ body {
   color: white;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+
+#content {
+  display: grid;
+  grid-template-areas: "projects announcements"
+                       "projects trending";
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#announcements {
+  grid-area: announcements;
+}
+
+#trending {
+  grid-area: trending;
 }
